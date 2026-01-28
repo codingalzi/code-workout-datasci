@@ -9,25 +9,45 @@ project:
     - https://github.com/jupyter-book/myst-plugins/releases/download/updated-date-frontmatter/update-date-frontmatter.mjs
     - https://github.com/jupyter-book/myst-plugins/releases/download/page-last-updated/page-last-updated.mjs
 
-  id: d6995d71-fad2-4969-b85d-59ecf3e463fe
-  title: '42H: 데이터 사이언스'
+
+  id: bfa66ee1-fd85-4563-8fb7-04c22ec8dbd3
+  title: '42H: 파이썬'
+  # authors:
+  #   - name: 코딩알지
 
   numbering: 
     title: true
     headings: true
-
   # description:
   # keywords: []
   # authors: []
-  github: https://github.com/codingalzi/code-workout-datasci
+  github: https://github.com/codingalzi/code-workout-python
   
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
-  toc:
-    - file: intro.ipynb
-    - file: variables_values.ipynb
+  exports:
+    - format: typst
+      template: https://github.com/myst-templates/plain_typst_book.git 
+      output: exports/MechaRela.pdf
+      id: output-pdf1
+      logo: logo_TUD.png
+      cover: cover.png
+      
+  # jupyter:
+  #   binder:
+  #     repo: https://github.com/executablebooks/thebe-binder-base
 
+# To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: intro.md
+    - file: programming.md
+    - file: starting.ipynb
+    - file: values.ipynb
+    - file: expressions_dataTypes.ipynb
+    - file: logical.ipynb
+    - file: inputs.ipynb
+  
 site:
   template: book-theme
-  # options:
-  favicon: favicon.ico
-  logo: codingalzi.svg
+  options:
+    # logo_text: "코딩알지"
+    favicon: favicon.ico
+    logo: codingalzi.svg
