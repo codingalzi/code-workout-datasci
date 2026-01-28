@@ -11,6 +11,8 @@ project:
 
   id: d6995d71-fad2-4969-b85d-59ecf3e463fe
   title: '42H: 데이터 사이언스'
+  # authors:
+  #   - name: 코딩알지
 
   numbering: 
     title: true
@@ -28,6 +30,7 @@ project:
 
 site:
   template: book-theme
-  # options:
-  favicon: favicon.ico
-  logo: codingalzi.svg
+  options:
+    # logo_text: "코딩알지"
+    favicon: favicon.ico
+    logo: codingalzi.svg
