@@ -1,23 +1,43 @@
-import json
 import os
+import json
 import uuid
 
-notebook_dir = "/home/gslee/wGitHub/code-workout-datasci/jupyter-book"
+def regenerate_cell_ids(directory):
+    # os.walk는 지정된 디렉토리부터 시작해서 모든 하위 폴더를 재귀적으로 순회합니다.
+    print(f"📂 Searching for notebooks recursively in: {directory}")
+    
+    processed_files = 0
+    
+    for root, dirs, files in os.walk(directory):
+        # 불필요한 폴더 건너뛰기 (_build, git, venv 등)
+        if any(x in root for x in ["_build", ".ipynb_checkpoints", ".git", ".venv", "env"]):
+            continue
+            
+        for file in files:
+            if file.endswith(".ipynb"):
+                file_path = os.path.join(root, file)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        nb = json.load(f)
+                    
+                    if 'cells' not in nb:
+                        continue
+                        
+                    # 모든 셀에 새로운 고유 ID 할당
+                    for cell in nb['cells']:
+                        cell['id'] = str(uuid.uuid4())
+                    
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        json.dump(nb, f, indent=1, ensure_ascii=False)
+                        
+                    print(f"  ✓ Fixed: {file_path}")
+                    processed_files += 1
+                    
+                except Exception as e:
+                    print(f"  ✗ Error: {file_path} - {str(e)}")
 
-for filename in os.listdir(notebook_dir):
-    if filename.endswith(".ipynb"):
-        filepath = os.path.join(notebook_dir, filename)
-        
-        with open(filepath, 'r', encoding='utf-8') as f:
-            nb = json.load(f)
-        
-        # 모든 셀에 고유한 ID 할당
-        for cell in nb['cells']:
-            cell['id'] = str(uuid.uuid4())
-        
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(nb, f, ensure_ascii=False, indent=1)
-        
-        print(f"✓ {filename} - 셀 ID 재생성 완료")
+    print(f"\n✨ 완료! 총 {processed_files}개의 노트북 파일이 수정되었습니다.")
 
-print("완료!")
+if __name__ == "__main__":
+    # 현재 폴더(.)를 시작점으로 지정하면 모든 하위 폴더를 탐색합니다.
+    regenerate_cell_ids(".")
