@@ -1,3 +1,4 @@
+# ...existing code...
 import os
 import json
 import uuid
@@ -23,9 +24,14 @@ def regenerate_cell_ids(directory):
                     if 'cells' not in nb:
                         continue
                         
-                    # 모든 셀에 새로운 고유 ID 할당
+                    # 모든 셀에 새로운 고유 ID 할당 및 metadata 정리
                     for cell in nb['cells']:
+                        # 1. 표준 'id' 필드 갱신
                         cell['id'] = str(uuid.uuid4())
+                        
+                        # 2. metadata 내의 'id' 필드 제거 (중복의 원인)
+                        if 'metadata' in cell and 'id' in cell['metadata']:
+                            del cell['metadata']['id']
                     
                     with open(file_path, 'w', encoding='utf-8') as f:
                         json.dump(nb, f, indent=1, ensure_ascii=False)
