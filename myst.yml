@@ -31,7 +31,7 @@ project:
     - file: intro.ipynb
     - title: 파이썬 기초
       children:
-      - file: data_types_basic.ipynb
+      - file: values.ipynb
       - file: strings.ipynb
       - file: lists_dicts.ipynb
       # - file: lists.ipynb
