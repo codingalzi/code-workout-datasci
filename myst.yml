@@ -31,34 +31,35 @@ project:
     - file: intro.ipynb
     - title: 파이썬 기초
       children:
-      - file: jupyter-book/variables_values.ipynb
-      - file: jupyter-book/lists_dicts.ipynb
+      # - file: variables_values.ipynb
+      - file: lists_dicts.ipynb
+      - file: oop.ipynb
     - title: 어레이와 데이터프레임
       children:
-      - file: jupyter-book/arrays.ipynb
-      - file: jupyter-book/series.ipynb
-      - file: jupyter-book/dataframes.ipynb
+      - file: arrays.ipynb
+      - file: series.ipynb
+      - file: dataframes.ipynb
     - title: 데이터 시각화
       children:
-      - file: jupyter-book/data_handling.ipynb
-      - file: jupyter-book/representatives.ipynb
-      - file: jupyter-book/linear_correlation_1.ipynb
-      # - file: jupyter-book/oneD_data.ipynb
-      - file: jupyter-book/oneD_visualization.ipynb
-      # - file: jupyter-book/twoD_data.ipynb
-      - file: jupyter-book/twoD_visualization.ipynb
+      - file: data_handling.ipynb
+      - file: representatives.ipynb
+      - file: linear_correlation_1.ipynb
+      # - file: oneD_data.ipynb
+      - file: oneD_visualization.ipynb
+      # - file: twoD_data.ipynb
+      - file: twoD_visualization.ipynb
     - title: 확률과 통계
       children:
-      - file: jupyter-book/sampling.ipynb
-      - file: jupyter-book/expected_values.ipynb
-      - file: jupyter-book/probability.ipynb
-      - file: jupyter-book/probability_discrete.ipynb
-      - file: jupyter-book/probability_continuous.ipynb
+      - file: sampling.ipynb
+      - file: expected_values.ipynb
+      - file: probability.ipynb
+      - file: probability_discrete.ipynb
+      - file: probability_continuous.ipynb
     - title: 가설 검정
       children:
-      - file: jupyter-book/normal_distribution.ipynb
-      - file: jupyter-book/sampling_distribution.ipynb
-      - file: jupyter-book/hypothesis_testing.ipynb
+      - file: normal_distribution.ipynb
+      - file: sampling_distribution.ipynb
+      - file: hypothesis_testing.ipynb
 
 site:
   template: book-theme
