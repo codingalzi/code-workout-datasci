@@ -32,12 +32,14 @@ project:
     - title: 파이썬 기초
       children:
       - file: values.ipynb
+      # - file: data_types_basic.ipynb
       - file: strings.ipynb
-      - file: lists_dicts.ipynb
-      # - file: lists.ipynb
-      # - file: iteration_for.ipynb
+      # - file: lists_dicts.ipynb
+      - file: lists.ipynb
+      - file: tuples.ipynb
+            # - file: iteration_for.ipynb
       # - file: iteration_while.ipynb
-      # - file: dicts.ipynb
+      - file: dicts.ipynb
       - file: oop.ipynb
     - title: 어레이와 데이터프레임
       children:
