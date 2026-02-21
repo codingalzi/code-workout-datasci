@@ -44,6 +44,7 @@ project:
     - title: 어레이와 데이터프레임
       children:
       - file: arrays.ipynb
+      - file: arrays_operation.ipynb
       - file: series.ipynb
       - file: dataframes.ipynb
     - title: 데이터 시각화
