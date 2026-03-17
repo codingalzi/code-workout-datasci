@@ -47,7 +47,6 @@ project:
       children:
       - file: arrays.ipynb
       - file: arrays_operation.ipynb
-      - file: array_oriented.ipynb
       - file: series.ipynb
       - file: dataframes.ipynb
     - title: 데이터 시각화
