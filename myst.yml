@@ -49,14 +49,12 @@ project:
       - file: arrays_operation.ipynb
       - file: series.ipynb
       - file: dataframes.ipynb
-    - title: 데이터 시각화
+    - title: 탐색적 데이터 분석
       children:
       - file: data_handling.ipynb
       - file: representatives.ipynb
       - file: linear_correlation_1.ipynb
-      # - file: oneD_data.ipynb
       - file: oneD_visualization.ipynb
-      # - file: twoD_data.ipynb
       - file: twoD_visualization.ipynb
     - title: 확률과 통계
       children:
