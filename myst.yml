@@ -53,7 +53,7 @@ project:
       children:
       - file: data_exploration.ipynb
       - file: representatives.ipynb
-      - file: linear_correlation_1.ipynb
+      - file: linear_correlation.ipynb
       - file: oneD_visualization.ipynb
       - file: twoD_visualization.ipynb
     - title: 확률과 통계
