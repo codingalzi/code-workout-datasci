@@ -51,11 +51,10 @@ project:
       - file: dataframes.ipynb
     - title: 탐색적 데이터 분석
       children:
-      - file: data_exploration.ipynb
-      - file: representatives.ipynb
+      - file: eda.ipynb
+      - file: descriptive_stats.ipynb
       - file: linear_correlation.ipynb
-      - file: oneD_visualization.ipynb
-      - file: twoD_visualization.ipynb
+      - file: data_visualization.ipynb
     - title: 확률과 통계
       children:
       - file: sampling.ipynb
