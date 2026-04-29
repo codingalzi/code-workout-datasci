@@ -60,6 +60,7 @@ project:
       - file: ml_landscape.ipynb
       - file: end2end_ml_project.ipynb
       - file: training_models.ipynb
+      - file: clustering.ipynb
     - title: 확률과 통계
       children:
       - file: sampling.ipynb
