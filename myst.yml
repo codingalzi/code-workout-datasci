@@ -55,23 +55,11 @@ project:
       - file: descriptive_stats.ipynb
       - file: linear_correlation.ipynb
       - file: data_visualization.ipynb
-    - title: 머신러닝
+    - title: 머신러닝 기초
       children:
-      - file: ml_landscape.ipynb
-      - file: end2end_ml_project.ipynb
-      - file: training_models.ipynb
-      - file: clustering.ipynb
-    - title: 확률과 통계
-      children:
-      - file: sampling.ipynb
-      - file: expected_values.ipynb
-      - file: probability.ipynb
-      - file: probability_discrete.ipynb
-      - file: probability_continuous.ipynb
-    - title: 가설 검정
-      children:
-      - file: normal_distribution.ipynb
-      - file: sampling_distribution.ipynb
+      - file: ml_intro.ipynb
+      - file: ml_project.ipynb
+
 
 site:
   template: book-theme
