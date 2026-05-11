@@ -51,10 +51,10 @@ project:
       - file: dataframes.ipynb
     - title: 탐색적 데이터 분석
       children:
-      - file: eda.ipynb
       - file: descriptive_stats.ipynb
       - file: linear_correlation.ipynb
       - file: data_visualization.ipynb
+      - file: eda.ipynb
     - title: 머신러닝 기초
       children:
       - file: ml_intro.ipynb
