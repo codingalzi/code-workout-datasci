@@ -55,10 +55,11 @@ project:
       - file: linear_correlation.ipynb
       - file: data_visualization.ipynb
       - file: eda.ipynb
-    - title: 머신러닝 기초
+    - title: 머신러닝 소개
       children:
       - file: ml_intro.ipynb
       - file: ml_project.ipynb
+      # - file: ml_project_categorical.ipynb
 
 
 site:
