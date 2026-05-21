@@ -59,6 +59,7 @@ project:
       children:
       - file: ml_intro.ipynb
       - file: ml_classification.ipynb
+      - file: ml_cancer.ipynb
       - file: ml_regression.ipynb
 
 site:
