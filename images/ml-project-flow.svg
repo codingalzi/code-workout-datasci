@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">머신러닝 프로젝트 진행 과정</title>
+  <desc id="desc">회귀 프로젝트의 9단계 진행 과정을 문제 정의부터 모델 훈련 평가까지 순서대로 보여주는 흐름도</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font: 700 34px "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #172033; }
+      .subtitle { font: 400 17px "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #516071; }
+      .card { fill: #ffffff; stroke: #d7dee8; stroke-width: 2; rx: 14; }
+      .step-no { font: 700 15px "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #ffffff; }
+      .step-title { font: 700 22px "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #172033; }
+      .step-desc { font: 400 15px "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #526273; }
+      .badge { fill: #2f6f73; }
+      .arrow { stroke: #8aa0b5; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+      .band-a { fill: #e9f4f3; }
+      .band-b { fill: #eef2fb; }
+      .band-c { fill: #f7f0e7; }
+      .band-d { fill: #f2f5ed; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8aa0b5"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="600" y="62" text-anchor="middle">머신러닝 프로젝트 진행 과정</text>
+
+  <g transform="translate(70 135)">
+    <rect class="band-a" x="0" y="0" width="1060" height="155" rx="18"/>
+    <rect class="band-b" x="0" y="190" width="1060" height="155" rx="18"/>
+    <rect class="band-c" x="0" y="380" width="1060" height="155" rx="18"/>
+
+    <g transform="translate(25 22)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">1</text>
+      <text class="step-title" x="78" y="42">문제 정의</text>
+      <text class="step-desc" x="30" y="76">문제와 목표 정의임</text>
+    </g>
+
+    <path class="arrow" d="M 350 77 H 410"/>
+
+    <g transform="translate(425 22)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">2</text>
+      <text class="step-title" x="78" y="42">훈련 모델 선택</text>
+      <text class="step-desc" x="30" y="76">모델 선택임</text>
+    </g>
+
+    <path class="arrow" d="M 750 77 H 810"/>
+
+    <g transform="translate(825 22)">
+      <rect class="card" width="210" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">3</text>
+      <text class="step-title" x="78" y="42">데이터 적재</text>
+      <text class="step-desc" x="30" y="76">데이터 불러오기임</text>
+    </g>
+
+    <path class="arrow" d="M 930 134 V 182"/>
+
+    <g transform="translate(825 212)">
+      <rect class="card" width="210" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">4</text>
+      <text class="step-title" x="78" y="42">구조 파악</text>
+      <text class="step-desc" x="30" y="76">구조 확인임</text>
+    </g>
+
+    <path class="arrow" d="M 810 267 H 750"/>
+
+    <g transform="translate(425 212)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">5</text>
+      <text class="step-title" x="78" y="42">데이터 전처리</text>
+      <text class="step-desc" x="30" y="76">데이터 준비임</text>
+    </g>
+
+    <path class="arrow" d="M 410 267 H 350"/>
+
+    <g transform="translate(25 212)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">6</text>
+      <text class="step-title" x="78" y="42">훈련셋과 테스트셋</text>
+      <text class="step-desc" x="30" y="76">데이터 분할임</text>
+    </g>
+
+    <path class="arrow" d="M 180 324 V 372"/>
+
+    <g transform="translate(25 402)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">7</text>
+      <text class="step-title" x="78" y="42">탐색적 데이터 분석</text>
+      <text class="step-desc" x="30" y="76">분포와 관계 확인임</text>
+    </g>
+
+    <path class="arrow" d="M 350 457 H 410"/>
+
+    <g transform="translate(425 402)">
+      <rect class="card" width="310" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">8</text>
+      <text class="step-title" x="78" y="42">모델 훈련</text>
+      <text class="step-desc" x="30" y="76">모델 학습임</text>
+    </g>
+
+    <path class="arrow" d="M 750 457 H 810"/>
+
+    <g transform="translate(825 402)">
+      <rect class="card" width="210" height="110"/>
+      <circle class="badge" cx="42" cy="36" r="18"/>
+      <text class="step-no" x="42" y="42" text-anchor="middle">9</text>
+      <text class="step-title" x="78" y="42">모델 평가</text>
+      <text class="step-desc" x="30" y="76">성능 평가임</text>
+    </g>
+  </g>
+</svg>
