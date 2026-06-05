@@ -58,7 +58,7 @@ project:
     - title: 머신러닝 첫걸음
       children:
       - file: ml_intro.ipynb
-      - file: ml_regression.ipynb
+      - file: ml_regression-1.ipynb
       - file: ml_classification.ipynb
 
 site:
