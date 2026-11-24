@@ -10,7 +10,7 @@ project:
     - https://github.com/jupyter-book/myst-plugins/releases/download/page-last-updated/page-last-updated.mjs
 
   id: d6995d71-fad2-4969-b85d-59ecf3e463fe
-  title: '42H: 데이터 사이언스'
+  title: '데이터 과학 입문'
   # authors:
   #   - name: 코딩알지
 
